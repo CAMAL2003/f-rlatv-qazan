@@ -1,0 +1,84 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+}
+
+.wheel {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid #333;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transform-origin: center;
+    transition: transform 3s ease-out;
+}
+
+.wheel-section {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+#wheel-section-1 {
+    background-color: #ff6666;
+    transform: rotate(0deg);
+}
+
+#wheel-section-2 {
+    background-color: #ffcc66;
+    transform: rotate(72deg);
+}
+
+#wheel-section-3 {
+    background-color: #66cc66;
+    transform: rotate(144deg);
+}
+
+#wheel-section-4 {
+    background-color: #66ccff;
+    transform: rotate(216deg);
+}
+
+#wheel-section-5 {
+    background-color: #ff99cc;
+    transform: rotate(288deg);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
